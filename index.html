@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DirectIfly – Green Level Student Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="home">
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="site-header">
+    <h1 class="brand">DirectIfly – Green Level Student Portal</h1>
+    <button class="nav-toggle" aria-label="Open navigation">Menu</button>
+    <ul class="nav-menu">
+      <li><a href="index.html" data-page="home">Home</a></li><li><a href="resources.html" data-page="resources">Resources</a></li>
+      <li><a href="news.html" data-page="news">News</a></li><li><a href="clubs.html" data-page="clubs">Clubs</a></li>
+      <li><a href="games.html" data-page="games">Games</a></li><li><a href="directory-calendar.html" data-page="directory">Directory & Calendar</a></li>
+      <li><a href="messages.html" data-page="messages">Messages</a></li>
+    </ul>
+  </header>
+  <main id="main" class="container">
+    <section class="banner" contenteditable="true" aria-label="Editable announcement banner">📢 Check the Events page for upcoming early release days.</section>
+
+    <section class="card quick-links">
+      <h2>Quick Access</h2>
+      <div class="grid grid-2">
+        <a class="btn" href="https://920.ncsis.gov/campus/portal/students/psu920wakeco.jsp?status=login" target="_blank" rel="noopener">Infinite Campus</a>
+        <a class="btn" href="https://wcpss.instructure.com" target="_blank" rel="noopener">Canvas</a>
+        <a class="btn" href="https://launchpad.classlink.com/wcpss" target="_blank" rel="noopener">WakeID Portal</a>
+        <a class="btn" href="https://nc01911451.schoolwires.net/domain/15374" target="_blank" rel="noopener">Bell Schedule</a>
+      </div>
+    </section>
+
+    <section class="grid grid-3">
+      <article class="card"><h2>Top Resources</h2><p>Find academic tools and student services quickly.</p><a class="btn secondary" href="resources.html">Open Resources</a></article>
+      <article class="card"><h2>Latest News</h2><p>Read recent Green Level stories from the official feed.</p><a class="btn secondary" href="news.html">Open News</a></article>
+      <article class="card"><h2>Games Preview</h2><p>Enjoy safe educational games and brain challenges.</p><a class="btn secondary" href="games.html">Open Games</a></article>
+    </section>
+  </main>
+  <footer class="footer">
+    <p><a href="https://nc01911451.schoolwires.net/Page/42026" target="_blank" rel="noopener">Contact</a> | This site does not collect or store student personal data.</p>
+    <p>© <span id="year"></span> DirectIfly</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="script.js"></script>
+</body>
+</html>
