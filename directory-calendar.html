@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Directory & Calendar | DirectIfly</title><link rel="stylesheet" href="styles.css"/></head>
+<body data-page="directory"><header class="site-header"><h1 class="brand">DirectIfly – Green Level Student Portal</h1><button class="nav-toggle">Menu</button><ul class="nav-menu"><li><a href="index.html" data-page="home">Home</a></li><li><a href="resources.html" data-page="resources">Resources</a></li><li><a href="news.html" data-page="news">News</a></li><li><a href="clubs.html" data-page="clubs">Clubs</a></li><li><a href="games.html" data-page="games">Games</a></li><li><a href="directory-calendar.html" data-page="directory">Directory & Calendar</a></li><li><a href="messages.html" data-page="messages">Messages</a></li></ul></header>
+<main class="container grid grid-2">
+<section class="card"><h2>Staff Directory</h2><p id="directory-status" class="warning"></p><label for="staff-search">Search by name, department, room, or email</label><input id="staff-search" placeholder="Search directory"/><table><thead><tr><th>Name</th><th>Department</th><th>Room</th><th>Email</th></tr></thead><tbody id="staff-body"></tbody></table></section>
+<section class="card"><h2>Events & Calendar</h2><a class="btn" target="_blank" rel="noopener" href="https://resources.finalsite.net/images/v1770668304/wcpssnet/kktjgv2shui7iqt8pp6p/25-26TRADupdated02022026.pdf">Download Full WCPSS Calendar</a><ul><li><strong>Teacher Workdays</strong> (No School)</li><li><strong>Holidays</strong> (No School)</li><li><strong>Early Release Days</strong></li><li><strong>First/Last Day</strong></li><li><strong>Semester Changes</strong></li></ul><p class="warning">Dates are subject to change.</p></section>
+<section class="card" style="grid-column:1/-1"><h2>Contact Teacher</h2><p class="small">Safety note: no anonymous messages; all messages should be respectful and school-related.</p>
+<form id="teacher-contact-form"><label for="teacher-email">Teacher Email</label><input id="teacher-email" type="email" required placeholder="teacher@wcpss.net"/>
+<label for="student-name">Student Name</label><input id="student-name" required/>
+<label for="student-email">Student Email</label><input id="student-email" type="email" required/>
+<label for="subject">Subject</label><input id="subject" required/>
+<label for="message">Message</label><textarea id="message" required minlength="10"></textarea>
+<input id="website-field" aria-hidden="true" tabindex="-1" style="display:none" autocomplete="off" />
+<button class="btn" type="submit">Contact Teacher</button></form><p id="contact-response"></p></section>
+</main>
+<footer class="footer"><p><a href="https://nc01911451.schoolwires.net/Page/42026" target="_blank" rel="noopener">Contact</a> | This site does not collect or store student personal data.</p><p>© <span id="year"></span> DirectIfly</p></footer><script>year.textContent=new Date().getFullYear()</script><script src="script.js"></script></body></html>
